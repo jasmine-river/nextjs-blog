@@ -21,11 +21,16 @@ export default function Home({ allPostsData }) {
         <title>{siteTitle}</title>
       </Head>
       <section className={utilStyles.headingMd}>
-        <p style={{ fontStyle: "italic" }}>All rivers lead to the ocean.</p>
+        <p className="italic">All rivers lead to the ocean.</p>
         <p>
           (This is a sample website - you’ll be building a site like this on{" "}
           <a href="https://nextjs.org/learn">our Next.js tutorial</a>.)
         </p>
+        <button className="bg-blue-900 hover:bg-red-900 font-bold py-2 px-4 my-4 rounded">
+          <Link href="/posts/ssg-ssr">
+            <a className="text-white hover:no-underline">click on me</a>
+          </Link>
+        </button>
       </section>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <h2 className={utilStyles.headingLg}>Blog</h2>
